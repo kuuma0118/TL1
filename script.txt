@@ -1,0 +1,6 @@
+import bpy
+
+def moveVertex():
+    bpy.date.objects["Cube"].date.vertices[0].co.x += 1.0
+    
+moveVertex()
