@@ -84,7 +84,8 @@ class MYADDON_OT_export_scene(bpy.types.Operator,bpy_extras.io_utils.ExportHelpe
     bl_idname = "myaddon.myaddon_ot_export_scene"
     bl_label = "シーン出力"
     bl_description = "シーン情報をExportします"
-
+    #出力するファイルの拡張子
+    filename_ext = ".scene"
 
     def parse_scene_recursive(self, file, object, level):
         """シーン解析用再起関数"""
